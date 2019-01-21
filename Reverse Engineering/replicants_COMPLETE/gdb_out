@@ -1,0 +1,39 @@
+[----------------------------------registers-----------------------------------]
+EAX: 0x0 
+EBX: 0x804a000 --> 0x8049f14 --> 0x1 
+ECX: 0x0 
+EDX: 0xbffff0ac --> 0x5cafc500 
+ESI: 0xb7fb3000 --> 0x1d7d6c 
+EDI: 0x0 
+EBP: 0xbffff0f8 --> 0x0 
+ESP: 0xbffff080 --> 0xbffff09c ("to_say_something")                                                        <<<<<<<<<<<<<<<<<<<<<<<<<<<<SEEEEEEEEE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+EIP: 0x80486b0 (<main+99>:	add    esp,0x10)
+EFLAGS: 0x246 (carry PARITY adjust ZERO sign trap INTERRUPT direction overflow)
+[-------------------------------------code-------------------------------------]
+   0x80486a7 <main+90>:	lea    eax,[ebp-0x5c]
+   0x80486aa <main+93>:	push   eax
+   0x80486ab <main+94>:	call   0x80483b0 <strcmp@plt>
+=> 0x80486b0 <main+99>:	add    esp,0x10
+   0x80486b3 <main+102>:	test   eax,eax
+   0x80486b5 <main+104>:	jne    0x80486bc <main+111>
+   0x80486b7 <main+106>:	call   0x8048536 <print_flag>
+   0x80486bc <main+111>:	mov    eax,0x0
+[------------------------------------stack-------------------------------------]
+0000| 0xbffff080 --> 0xbffff09c ("to_say_something")
+0004| 0xbffff084 --> 0x8048799 ("to_say_something")
+0008| 0xbffff088 --> 0xb7fff940 --> 0x0 
+0012| 0xbffff08c --> 0x8048664 (<main+23>:	add    ebx,0x199c)
+0016| 0xbffff090 --> 0x0 
+0020| 0xbffff094 --> 0xca0000 
+0024| 0xbffff098 --> 0x0 
+0028| 0xbffff09c ("to_say_something")
+[------------------------------------------------------------------------------]
+Legend: code, data, rodata, value
+
+Breakpoint 1, 0x080486b0 in main ()
+gdb-peda$ c
+Continuing.
+inctfj{all_these_moments_lost_in_time}[Inferior 1 (process 3505) exited normally]
+Warning: not running or target is remote
+gdb-peda$ 
+

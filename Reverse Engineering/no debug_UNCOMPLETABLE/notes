@@ -1,0 +1,2 @@
+This program is unsolvable because the admins accidently uploaded the wrong binary.
+But the aim is to patch the binary by replcing "ptrace" calls by "ret" or "nop".
