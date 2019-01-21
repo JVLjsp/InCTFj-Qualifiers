@@ -1,0 +1,1 @@
+There are three parts for the flag.Which are hidden in the html,css and the js file.

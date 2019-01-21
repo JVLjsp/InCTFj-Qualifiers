@@ -1,0 +1,1 @@
+There is a robots.txt file in the website.From which you will get the name of a file in the website which contains the flag.

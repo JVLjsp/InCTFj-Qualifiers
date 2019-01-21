@@ -1,0 +1,4 @@
+Going throuth the source code of the website you can find a javascript.
+Wich is used to convert the flag first into hex then it is shifted with some shift value i.e., caesar cypher.
+then it is converted into base64.
+You just have to reverse it to get the flag.

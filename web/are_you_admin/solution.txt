@@ -1,0 +1,5 @@
+The website shows he source code of the php.
+You can understand it is a sql injection.
+= is black listed.
+filter for admin.
+final payoad :- http://35.154.254.85/are_you_admin?pass=' or pw like "a%" -- -

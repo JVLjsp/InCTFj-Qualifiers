@@ -1,0 +1,7 @@
+Webpage contains python.When executed says :- send get request with viewsource parameter
+After doing so we get the source code.
+A string compare for get parameter flag to the real flag.This can be bypassed by passing flag parameter as an array.
+Next checking if get parameter secret is of length 13 characters and value 1729 can be bypassed by 0000000001729 or by php type juggling since == used for comparing. 
+
+
+filnal payload:-http://35.154.254.85/s3cur3PHP/index.php?viewsource&flag[]&secret=0000000001729
