@@ -1,0 +1,5 @@
+#!/bin/bash
+unzip mischief.jpg 
+cd Flag
+subl *
+echo "compare both files and add the missing 0000 in busted.png's magic bytes"
